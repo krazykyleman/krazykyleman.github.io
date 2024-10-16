@@ -1,10 +1,8 @@
 header.mdc-top-app-bar {
     background-color: #FF7C7A;
     color: white;
-}
-
-.mdc-top-app-bar__title {
-    font-size: 1.5rem;
+    height: 64px;
+    /* Remove the width property */
 }
 
 .mdc-top-app-bar__row {
@@ -18,7 +16,17 @@ header.mdc-top-app-bar {
     margin-left: 16px;
 }
 
+.mdc-top-app-bar__section--align-end {
+    margin-right: 16px;
+    /* Add margin-right for balance */
+}
+
 /* Navigation Styles*/
+.mdc-top-app-bar__section--align-end nav {
+    margin: 0;
+    padding: 0;
+}
+
 .mdc-top-app-bar__section--align-end nav ul {
     list-style: none;
     margin: 0;
@@ -28,7 +36,7 @@ header.mdc-top-app-bar {
 }
 
 .mdc-top-app-bar__section--align-end nav li {
-    margin-left: 20px;
+    margin-left: 32px;
 }
 
 .mdc-top-app-bar__section--align-end nav a {
